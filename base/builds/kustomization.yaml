@@ -1,0 +1,9 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+- build-java-s2i-pipeline.yaml
+
+images:
+- name: app-image-name
+  newTag: latest
